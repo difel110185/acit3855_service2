@@ -1,0 +1,11 @@
+version: 1
+database:
+  user: "homestead"
+  password: "secret"
+  hostname: "localhost"
+  port: "33060"
+  db: "homestead"
+kafka:
+  domain: "localhost"
+  port: "9092"
+  topic: "events"
