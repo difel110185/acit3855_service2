@@ -45,7 +45,8 @@ def get_goals_scored(start_date, end_date):
 
         logger.info("Goals scored retrieved successfully from {} to {}".format(start_date, end_date))
     except:
-        logger.error("Service error getting the goals scored")
+        logger.error(e.args)
+        return NoContent, 500
 
     return results_list, 200
 
@@ -67,8 +68,9 @@ def get_cards_received(start_date, end_date):
         session.close()
 
         logger.info("Cards received retrieved successfully from {} to {}".format(start_date, end_date))
-    except:
-        logger.error("Service error getting the cards received")
+    except Exception as e:
+        logger.error(e.args)
+        return NoContent, 500
 
     return results_list, 200
 
