@@ -1,7 +1,7 @@
 import mysql.connector
 
 conn = mysql.connector.connect(
-   user='homestead', password='secret', host='localhost', port='33060', database='homestead'
+   user='user', password='password', host='docker-difel110185.eastus2.cloudapp.azure.com', port='3306', database='events'
 )
 
 c = conn.cursor()
