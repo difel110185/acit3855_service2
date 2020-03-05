@@ -1,11 +1,11 @@
 version: 1
 database:
-  user: "homestead"
-  password: "secret"
-  hostname: "localhost"
-  port: "33060"
-  db: "homestead"
+  user: "user"
+  password: "password"
+  hostname: "docker-difel110185.eastus2.cloudapp.azure.com"
+  port: "3306"
+  db: "events"
 kafka:
-  domain: "localhost"
+  domain: "docker-difel110185.eastus2.cloudapp.azure.com"
   port: "9092"
   topic: "events"
